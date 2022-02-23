@@ -1,0 +1,149 @@
+body {
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  padding: 1em;
+}
+ul {  
+  list-style-type: none;
+  padding-inline-start: unset;
+}
+input[type='radio'] {
+  appearance: unset;
+  background-color: unset;
+  background-image: unset;
+  border-bottom-color: unset;
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  border-bottom-style: unset;
+  border-bottom-width: unset;
+  border-image-outset: unset;
+  border-image-repeat: unset;
+  border-image-slice: unset;
+  border-image-source: unset;
+  border-image-width: unset;
+  border-left-color: unset;
+  border-left-style: unset;
+  border-left-width: unset;
+  border-right-color: unset;
+  border-right-style: unset;
+  border-right-width: unset;
+  border-top-color: unset;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+  border-top-style: unset;
+  border-top-width: unset;
+  box-shadow: unset;
+  box-sizing: unset;
+  color: unset;
+  cursor: unset;
+  display: unset;
+  font-family: unset;
+  font-size: unset;
+  font-stretch: unset;
+  font-style: unset;
+  font-variant-caps: unset;
+  font-variant-east-asian: unset;
+  font-variant-ligatures: unset;
+  font-variant-numeric: unset;
+  font-weight: unset;
+  height: unset;
+  letter-spacing: unset;
+  line-height: unset;
+  list-style-type: unset;
+  margin-bottom: unset;
+  margin-left: unset;
+  margin-right: unset;
+  margin-top: unset;
+  outline-color: unset;
+  outline-style: unset;
+  outline-width: unset;
+  padding-bottom: unset;
+  padding-left: unset;
+  padding-right: unset;
+  padding-top: unset;
+  position: unset;
+  text-align: unset;
+  text-indent: unset;
+  text-rendering: unset;
+  text-shadow: unset;
+  text-transform: unset;
+  user-select: unset;
+  vertical-align: unset;
+  width: unset;
+  word-spacing: unset;
+  writing-mode: unset;
+  -webkit-rtl-ordering: unset;
+  -webkit-border-image: unset;
+}
+input[type='radio'] {
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  background-image: -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.75);
+  color: #444;
+  font: inherit;
+  margin: 0 1px 0 0;
+  outline: none;
+  text-shadow: 0 1px 0 rgb(240, 240, 240);
+}
+input[type='radio'] {
+  border-radius: 100%;
+  height: 15px;
+  position: relative;
+  vertical-align: middle;
+  width: 15px;
+}
+input[type='radio']:checked::before {
+  background-color: #666;
+  border-radius: 100%;
+  bottom: 3px;
+  content: '';
+  display: block;
+  left: 3px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+input[type='radio']:enabled:hover {
+  background-image: -webkit-linear-gradient(#f0f0f0, #f0f0f0 38%, #e0e0e0);
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12),
+      inset 0 1px 2px rgba(255, 255, 255, 0.95);
+  color: black;
+}
+input[type='radio']:enabled:active {
+  background-image: -webkit-linear-gradient(#e7e7e7, #e7e7e7 38%, #d7d7d7);
+  box-shadow: none;
+  text-shadow: none;
+}
+input:[type='radio']:disabled {
+  opacity: .75;
+}
+input[type='radio']:enabled:focus {
+  -webkit-transition: border-color 200ms;
+  border-color: rgb(77, 144, 254);
+  outline: none;
+}
+.radio label {
+  align-items: center;
+  display: inline-flex;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+.radio label input {
+  flex-shrink: 0;
+}
+.radio label input ~ span {
+  -webkit-margin-start: 0.6em;
+  -webkit-user-select: none;
+  display: block;
+}
+.radio label:hover {
+  color: black;
+}
+label > input:[type='radio']:disabled ~ span {
+  color: #999;
+}
